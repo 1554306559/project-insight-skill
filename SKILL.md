@@ -38,25 +38,23 @@ The scripts in this skill are helpers only. They scan project structure, collect
 - Include related files for important claims.
 - If confidence is low, explicitly state what evidence is missing.
 
-## Output Rules
+## Output Language Rules
 
-Default output directory:
+The output language should follow the user's intent.
 
-`<project_root>/docs/project-insight/`
+Priority:
 
-Never scatter generated files in the project root.
+1. Explicit language requested by the user.
+2. Current conversation language.
+3. Existing repository documentation language.
+4. English (default).
 
-Required outputs:
+All generated artifacts should use the same language:
 
-- `project_report.md`
-- `architecture.mmd`
-- `business_flow.mmd`
-
-Optional outputs:
-
-- `architecture.drawio`
-- `project_context.json`
-- `analysis_notes.md`
+- project_report.md
+- analysis_notes.md
+- architecture.mmd labels
+- business_flow.mmd labels
 
 ## Helper Scripts
 
