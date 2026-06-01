@@ -1,0 +1,9 @@
+graph TD
+    Start[触发请求] --> Parse[参数解析]
+    Parse --> Validate[校验上下文]
+    Validate --> Service[业务处理]
+    Service --> Read[读取缓存或数据库]
+    Read --> Compute[核心业务计算]
+    Compute --> Persist[写入结果或发送消息]
+    Persist --> Response[返回响应]
+

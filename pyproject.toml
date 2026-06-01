@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-insight-skill"
+version = "0.1.0"
+description = "Agent-oriented project insight skill with helper scripts and templates."
+requires-python = ">=3.10"

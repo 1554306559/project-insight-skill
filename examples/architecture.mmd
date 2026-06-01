@@ -1,0 +1,8 @@
+graph TD
+    User[用户] --> Web[Web / API 入口]
+    Web --> Service[业务服务层]
+    Service --> Repository[数据访问层]
+    Repository --> Database[(Database)]
+    Service --> Cache[(Cache)]
+    Service --> Queue[Message Queue]
+    Queue --> Worker[Consumer Worker]
