@@ -1,8 +1,3 @@
----
-name: project-insight
-description: Analyze a software repository from a business and architecture perspective. Use this skill when asked to understand a codebase, summarize business functions, identify technology stack, extract key implementation flows, generate project documentation, or create Mermaid/Drawio architecture diagrams.
----
-
 # Project Insight Skill
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
